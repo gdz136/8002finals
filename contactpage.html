@@ -98,7 +98,7 @@
                                 <i class="fa fa-star-o" id="star5"></i>
                             </section>
                             <section>
-                                <input onclick="handleSubmit()" type="submit" id="submit" value="Submit">
+                                <input type="submit" id="submit" value="Submit">
                             </section>
                         </section>
                     </section>
@@ -282,13 +282,6 @@
             
         }
 
-        function handleSubmit () {
-            const usercomment = document.getElementById("usercomment").value;
-    
-            sessionStorage.setItem("USERCOMMENT", usercomment);
-
-            return;
-        }
 
     </script>
     </body>
