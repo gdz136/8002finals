@@ -462,8 +462,10 @@
         }
 
         window.addEventListener("load", () => {
-    
-            const usercomment = sessionStorage.getItem("USERCOMMENT");
+
+
+            const params = (new URL(document.location)).searchParams;
+            const usercomment = params.get("USERCOMMENT");
     
             document.getElementById("userreview").innerHTML = usercomment;
 
